@@ -2,10 +2,10 @@
   <div class="sidebar" :style="{width: sidebarWidth}">
     <h1>
       <span v-if="collapsed">
-        <div>V</div>
-        <div>S</div>
+        <!-- <div>V</div>
+        <div>S</div> -->
       </span>
-      <span v-else>Vue Sidebar</span>
+      <span class="font-semibold" v-else>Sidebar Menu</span>
     </h1>
 
     <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
