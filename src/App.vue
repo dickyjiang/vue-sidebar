@@ -1,6 +1,6 @@
 <template>
   <Sidebar />
-  <div :style="{ 'margin-left': sidebarWidth }">
+  <div class="mainSection" :style="{ 'margin-left': sidebarWidth }">
       <router-view/>
   </div>
 </template>
@@ -36,5 +36,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.mainSection {
+  transition: 0.3s ease;
 }
 </style>
