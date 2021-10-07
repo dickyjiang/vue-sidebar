@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar" :style="{width: sidebarWidth}">
+  <div class="sidebar border-r-2 border-black" :style="{width: sidebarWidth}">
     <h1>
       <span v-if="collapsed">
         <!-- <div>V</div>
@@ -37,9 +37,9 @@ export default {
 
 <style>
   :root {
-  --sidebar-bg-color: #2f855a;
-  --sidebar-item-hover: #38a169;
-  --sidebar-item-active: #276749;
+  --sidebar-bg-color: #fff;
+  --sidebar-item-hover: #000;
+  --sidebar-item-active: #000;
 }
 
 </style>
@@ -66,7 +66,7 @@ export default {
   position: absolute;
   bottom: 0;
   padding: 0.75em;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(116, 116, 116, 0.7);
   transition: 0.2s linear;
 }
 .rotate-180 {

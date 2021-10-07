@@ -46,10 +46,10 @@ export default {
   font-weight: 400;
   user-select: none;
   margin: 0.5em 0;
-  padding: 0.4em;
+  padding: 0.75em;
   border-radius: 0.25em;
   height: 1.5em;
-  color: white;
+  color: gray;
   text-decoration: none;
 }
 .link:hover {
