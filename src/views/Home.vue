@@ -2,7 +2,7 @@
   <div class="bg-white h-screen">
     <Navbar/>
     <div class="border-black">
-        <div class="pl-4 py-2 border-b border-black text-black text-4xl leading-tight font-semibold">
+        <div class="pl-4 py-2 border-b border-black text-black text-3xl leading-tight font-semibold">
           <h1>Controlled</h1>
           <h1>Tab</h1>
         </div>
@@ -14,9 +14,7 @@
             <SidebarRight/>
           </div>
         </div>
-
     </div>
-
   </div>
 </template>
 
