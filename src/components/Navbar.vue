@@ -4,7 +4,7 @@
         <p class="font-bold text-md">logo</p>
         <div class="flex gap-6 items-center">
             <div class="text-white text-xs bg-black py-2 px-3 rounded-full">
-                Get in Touch
+                Logout
             </div>
             <div class="flex items-center gap-2">
                 <i class="far fa-user-circle"></i>
