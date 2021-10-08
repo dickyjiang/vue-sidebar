@@ -2,12 +2,15 @@
 <div class="bg-white h-screen">
     <Navbar/>
       <div class="border-black">
-          <div class="pl-4 py-2 border-b border-black text-black text-3xl leading-tight font-semibold">
-            <h1>Controlled</h1>
-            <h1>Tab</h1>
-          </div>
-          <div>
-            
+          <div class="flex justify-between px-4 py-2 border-b border-black ">
+            <div class="text-black text-3xl leading-tight font-semibold">
+                <h1>Controlled</h1>
+                <h1>Tab</h1>
+            </div>
+            <div class="">
+              <h1 class="text-right">The sidebar is {{ collapsed ? 'closed' : 'open' }}</h1>
+              <button class="float-right rounded-full px-3 py-2 text-xs font-semibold text-white bg-black " @click="toggleSidebar">Toggle Sidebar</button>
+            </div>
           </div>
           <div class="text-sm flex min-h-screen ">
             <div class="flex-1 pt-4 px-4">
