@@ -1,9 +1,9 @@
 <template>
-  <div class="sidebar border-r-2 border-black" :style="{width: sidebarWidth}">
+  <div class="sidebar border-r border-black" :style="{width: sidebarWidth}">
     <h1>
       <span v-if="collapsed">
-        <!-- <div>V</div>
-        <div>S</div> -->
+        <div>V</div>
+        <div>S</div>
       </span>
       <span class="font-semibold" v-else>Sidebar Menu</span>
     </h1>

@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-white py-4 px-3 border-b-2 border-black ">
+  <div class=" py-4 px-3 border-b border-black ">
       <div class="flex justify-between">
         <p class="font-bold text-md">logo</p>
         <div class="flex gap-3 items-center">
-            <div class="text-white text-sm bg-black py-1 px-2 rounded-full">
+            <div class="text-white text-xs bg-black py-2 px-3 rounded-full">
                 Get in Touch
             </div>
-            <p>link 2</p>
+            <p>User</p>
         </div>
       </div>
   </div>
