@@ -37,8 +37,8 @@ export default {
 
 <style>
   :root {
-  --sidebar-bg-color: #fff;
-  --sidebar-item-hover: #000;
+  --sidebar-bg-color: white;
+  --sidebar-item-hover: rgb(129, 129, 129);
   --sidebar-item-active: #000;
 }
 
@@ -58,6 +58,7 @@ export default {
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 .sidebar h1 {
   height: 2.5em;

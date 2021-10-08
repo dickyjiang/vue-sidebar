@@ -48,7 +48,7 @@ export default {
   margin: 0.5em 0;
   padding: 0.3em;
   border-radius: 0.25em;
-  height: 1.5em;
+  height: 2,5em;
   color: black;
   text-decoration: none;
 }
