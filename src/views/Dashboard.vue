@@ -13,9 +13,16 @@
             </div>
           </div>
           <div class="text-sm flex min-h-screen ">
-            <div class="flex-1 pt-4 px-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius alias soluta a est officiis. Asperiores nesciunt odit nostrum quam accusantium atque necessitatibus. Deleniti natus quasi dolor aperiam accusamus eaque ducimus, cupiditate enim perferendis! Ipsum quo nesciunt, nihil natus temporibus voluptate, asperiores tempora vitae voluptatem exercitationem at fuga quae delectus unde sit quaerat debitis veniam quos nisi. Quasi, ipsa corrupti? Quo culpa debitis doloribus sunt temporibus alias suscipit esse dignissimos, explicabo sit laudantium necessitatibus ipsa sint, enim, consequatur cupiditate facilis quibusdam tenetur est hic id repellendus vel dolor molestias? Ullam repellat aliquam ex qui molestias? Aspernatur, dolores. Excepturi, dicta minima.</p>
-            </div>
+            <div class="divide-y divide-gray-100 flex-1">
+                <Nav class="w-full">
+                  <NavItem href="/featured" isActive>Featured</NavItem>
+                  <NavItem href="/popular">Popular</NavItem>
+                  <NavItem href="/recent">Recent</NavItem>
+                </Nav>
+                <List>
+                  <ListItem v-for="recipe in recipes" :key="recipe.id" :recipe="recipe" />
+                </List>
+              </div>
             <div class="w-1/4 border-l border-black">
               <SidebarRight/>
             </div>
@@ -29,10 +36,35 @@
 import { collapsed, toggleSidebar } from "../components/sidebar/state"
 import Navbar from "../components/Navbar.vue"
 import SidebarRight from '../components/sidebarRight/SidebarRight.vue'
+import Nav from '../components/Nav.vue'
+import NavItem from '../components/NavItem.vue'
+import List from '../components/List.vue'
+import ListItem from '../components/ListItem.vue'
 
 export default {
   name: 'Dashboard',
-  components: { Navbar,SidebarRight
+  // props: ['recipes'],
+  data() {
+    return {
+      recipes: [
+        {title:'bacang', time:'60', difficulty:'mayan', servings:'2', author:'siujang', rating:'5'},
+        {title:'lotek', time:'60', difficulty:'mayan', servings:'2', author:'siujang', rating:'5'},
+        {title:'ambokue', time:'60', difficulty:'mayan', servings:'2', author:'siujang', rating:'5'},
+        {title:'cakue', time:'60', difficulty:'mayan', servings:'2', author:'siujang', rating:'5'},
+
+      ]
+    }
+    
+    },
+  
+  
+  components: { 
+    Navbar,
+    SidebarRight,
+    Nav,
+    NavItem,
+    List,
+    ListItem,
   },
     setup() {
         return { collapsed, toggleSidebar}

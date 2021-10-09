@@ -58,7 +58,6 @@ export default {
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 .sidebar h1 {
   height: 2.5em;
